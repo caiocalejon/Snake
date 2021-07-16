@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    font-family: arial;
+    background: #cc462e;
+    background-image: linear-gradient(to top left, #2980b9, #e2ad89, #f80808);
+    position: relative;
+    text-align: center;
+  }
+  
+  /* titulo*/
+  
+  header {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 50px;
+    padding: 20px 10px;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* area de jogo */
+  
+  .snakeTable {
+    width: 210px;
+    height: 230px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 0 0 1px 2px rgba(0,0,0,0.3);
+  }
+  @media only screen and (min-width: 768px) {
+    .snakeTable {
+      width: 315px;
+      height: 345px;
+    }
+  }
+  
+  /* Boxes */
+  .box {
+    background: white;
+    border: solid 1px #ff0000;
+    width: 10px;
+    height: 10px;
+  }
+  @media only screen and (min-width: 768px) {
+    .box {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  
+  .food {
+    background: #07c500;
+  }
+  
+  .snake {
+    background: #000000;
+  }
+  
+  /* Status */
+  .status {
+    background: white;
+    color: #ff0000;
+    border: solid 1px #ff0000;
+    width: 210px;
+    height: 20px;
+  }
+  @media only screen and (min-width: 768px) {
+    .status {
+      width: 315px;
+      height: 30px;
+    }
+  }
+  
+  .score {
+    float: right;
+    padding: 0 5px;
+    line-height: 20px;
+  }
+  @media only screen and (min-width: 768px) {
+    .score {
+      padding: 0 10px;
+      line-height: 30px;
+      font-size: 20px;
+    }
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  
+  .modul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+  }
+  .start {
+    background: rgba(256,256,256,1);
+    padding: 40px 50px;
+  
+    width: 240px;
+    box-shadow: 0 0 2px 3px rgba(0,0,0,0.3);
+  }
+  .start span {
+    color: #ff0000;
+    border: 1px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .start span:hover {
+    background: #ff0000;
+    color: white;
+  }
+  
+  footer {
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
